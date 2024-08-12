@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello Rigo with Vanilla.js</title>
+    <title>Generador de Cartas</title>
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
@@ -14,15 +14,37 @@
   </head>
   <body>
     <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
+      <div class="row text-light justify-content-center mt-4">
+        <h1>Generador de cartas aleatorias</h1>
+      </div>
+
+      <div class="row justify-content-center mt-3">
+        <div class="col-auto d-flex align-items-center">
+          <label for="widthInput" class="text-white">Ancho:</label>
+          <input
+            type="text"
+            id="widthInput"
+            class="form-control d-inline-block w-auto mx-2"
+          />
+          <label for="heightInput" class="text-white">Alto:</label>
+          <input
+            type="text"
+            id="heightInput"
+            class="form-control d-inline-block w-auto mx-2"
+          />
+          <button class="btn btn-dark text-light mx-3" id="btnGenerar">
+            Nueva Carta
+          </button>
+        </div>
+      </div>
+      <div class="row justify-content-center mt-4">
+        <div class="col-auto">
+          <div
+            id="card"
+            class="card bg-light"
+            style="width: 18rem; height: 400px;"
+          ></div>
+        </div>
       </div>
     </div>
   </body>
